@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ensalada César"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imagenReceta"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ensaladacesar"
+        android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tituloIngredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 1 lechuga romana\n• 100g de queso parmesano\n• 100g de croutones\n• 2 pechugas de pollo a la parrilla\n• Salsa César al gusto\n• Sal y pimienta al gusto"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tituloPreparacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preparación"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/pasosPreparacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Lava y corta la lechuga en trozos.\n2. Cocina las pechugas de pollo a la parrilla y corta en tiras.\n3. En un tazón grande, mezcla la lechuga, el pollo, los croutones y el queso parmesano.\n4. Agrega la salsa César y mezcla bien. Sirve inmediatamente."
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

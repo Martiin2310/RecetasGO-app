@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risotto de Champiñones"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imagenReceta"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/risottochampi"
+        android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tituloIngredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 1 taza de arroz arborio\n• 200 g de champiñones\n• 1 litro de caldo de pollo o verduras\n• 1 cebolla pequeña\n• 2 dientes de ajo\n• 50 g de queso parmesano\n• 50 g de mantequilla\n• Aceite de oliva\n• Sal y pimienta al gusto"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tituloPreparacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preparación"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/pasosPreparacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Limpia y corta los champiñones en láminas.\n2. Sofríe la cebolla y el ajo en aceite de oliva hasta que estén transparentes.\n3. Agrega los champiñones y cocina hasta que estén dorados.\n4. Incorpora el arroz y mezcla bien, cocinando por 1-2 minutos.\n5. Añade el caldo gradualmente, removiendo, hasta que el arroz esté cremoso y al dente.\n6. Retira del fuego y añade la mantequilla y el queso parmesano. Mezcla bien y ajusta la sal y pimienta al gusto.\n7. Sirve caliente, decorado con queso parmesano y perejil picado."
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

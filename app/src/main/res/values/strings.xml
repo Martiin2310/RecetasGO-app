@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="botInicio" id="botNavIN">Inicio</string>
+    <string name="botAgregar" id="botNavAg">Agregar</string>
+    <string name="botPerfil" id="botNavPf">Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textoinicio">Inicio</string>
+    <string name="textoagregar">Agregar</string>
+    <string name="textoperfil">Perfil</string>
+</resources>

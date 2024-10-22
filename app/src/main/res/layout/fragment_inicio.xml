@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mantel"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tituloPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recetas Deliciosas"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center" />
+
+            <!-- Tarjeta 1: Fideo Salsa -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/FideoSalsa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tituloCardFideo">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fideo Salsa"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewFideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/fideosalsa"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/loremFideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dificultad: Fácil\nRecomendado para: Principiantes"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/irFideoSalsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ir a Receta Completa"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta 2: Ensalada César -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/EnsaladaCesar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tituloCardCesar">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ensalada César"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewCesar"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ensaladacesar"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/loremCesar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dificultad: Media\nRecomendado para: Cocineros Intermedios"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/irEnsaladaCesar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ir a Receta Completa"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta 3: Tacos de Pollo -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/TacosPollo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tituloCardTacos">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tacos de Pollo"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewTacos"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/tacospollo"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/loremTacos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dificultad: Fácil\nRecomendado para: Todos"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/irTacosPollo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ir a Receta Completa"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta 4: Risotto de Champiñones -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/RisottoChampinones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tituloCardRisotto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Risotto de Champiñones"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewRisotto"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/risottochampi"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/loremRisotto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dificultad: Alta\nRecomendado para: Cocineros Avanzados"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/irRisottoChampinones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ir a Receta Completa"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
